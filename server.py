@@ -6,9 +6,6 @@ _groupName = 'Auto-join group'
 
 
 def userSaved(event):
-    """
-    Adds any newly-created users the user to the auto-join group.
-    """
     if '_id' in event.info:  # Only add to group at new user creation time.
         return
 
